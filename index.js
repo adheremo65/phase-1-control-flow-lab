@@ -34,15 +34,16 @@ function switchOnCharmFromTip(tip ){
   let okay;
 
       switch (tip) {
-        case 'genrous':
+        case 'generous':
           okay ='Thank you so much.'
          break
-        case  "not genrous":
+        case  "not as generous":
          okay ="Thank you."
         break
         default: 
           okay = "Bye."
       } 
-  return okay;}
+  return okay;
+}
 
 switchOnCharmFromTip();
