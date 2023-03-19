@@ -1,11 +1,48 @@
-function scuberGreetingForFeet(){
-  // Write your code here!
+function scuberGreetingForFeet(feetRide){
+  let sample;
+  if (feetRide <= 400) {
+    sample = 'This one is on me!'
+  } else if (feetRide >=400 && feetRide <= 2000 ) {
+    sample = 'That will be twenty bucks.'
+  } 
+  else if (feetRide > 2000 && feetRide <= 2500) {
+    sample = 'I will gladly take your thirty bucks.'
+  } else if (feetRide > 2500) {
+    sample = 'No can do.'
+  } 
+  return sample;
+
 }
 
-function ternaryCheckCity(){
+  scuberGreetingForFeet();
+
+  
+
+
+
   // Write your code here!
+
+function ternaryCheckCity(city){
+  //const city = "NYC";
+  let result;
+  result = city === "NYC"? 'Ok, sounds good.':'No go.';
+  return result; 
 }
 
-function switchOnCharmFromTip(){
-  // Write your code here!
-}
+ternaryCheckCity();
+function switchOnCharmFromTip(tip ){
+  let okay;
+
+      switch (tip) {
+        case 'genrous':
+          okay ='Thank you so much.'
+         break
+        case  "not genrous":
+         okay ="Thank you."
+        break
+        default: 
+          okay = "Bye."
+      } 
+  return okay;}
+
+switchOnCharmFromTip();
